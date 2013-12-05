@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="selector_image_pressed">#44FFFFFF</color>
+    <color name="expandable_handle_textcolor">#000000</color>
+    <color name="expandable_handle_pressed">#F4F4F4</color>
+    <color name="nutritional_row_second_color">#C0C0C0</color>
+    <color name="nutritional_row_header_color">#666666</color>
+</resources>

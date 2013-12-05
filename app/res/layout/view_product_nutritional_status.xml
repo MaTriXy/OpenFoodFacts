@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/nutritional_row_space">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/nutritional_row_space"
+            android:singleLine="true"
+            android:text="@string/serving_size"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/servingSize"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            tools:text="value" />
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/nutritional_row_space"
+        android:background="#F0F0F0"
+        android:stretchColumns="0">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/nutritional_row_header_color"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="@string/nutritional_composition"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="@string/for_100"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="@string/for_serving_size"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/nutritional_row_space"
+            android:paddingTop="@dimen/nutritional_row_space">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="@string/energy"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/energy100"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                tools:text="value" />
+
+            <TextView
+                android:id="@+id/energyServing"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                tools:text="value" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/nutritional_row_space"
+            android:paddingTop="@dimen/nutritional_row_space">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="@string/proteins"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/proteins100"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                tools:text="value" />
+
+            <TextView
+                android:id="@+id/proteinsServing"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                tools:text="value" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/nutritional_row_space"
+            android:paddingTop="@dimen/nutritional_row_space">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="@string/carbohydrates"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/carbohydrates100"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                tools:text="value" />
+
+            <TextView
+                android:id="@+id/carbohydratesServing"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                tools:text="value" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/nutritional_row_second_color"
+            android:paddingBottom="@dimen/nutritional_row_space"
+            android:paddingLeft="@dimen/nutritional_row_space"
+            android:paddingTop="@dimen/nutritional_row_space">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="@string/sugar"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/sugar100"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                tools:text="value" />
+
+            <TextView
+                android:id="@+id/sugarServing"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                tools:text="value" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/nutritional_row_space"
+            android:paddingTop="@dimen/nutritional_row_space">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="@string/fat"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/fat100"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                tools:text="value" />
+
+            <TextView
+                android:id="@+id/fatServing"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                tools:text="value" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/nutritional_row_space"
+            android:paddingTop="@dimen/nutritional_row_space">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="@string/satured_fat"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/saturedFat100"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                tools:text="value" />
+
+            <TextView
+                android:id="@+id/saturedFatServing"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                tools:text="value" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/nutritional_row_space"
+            android:paddingTop="@dimen/nutritional_row_space">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="@string/fiber"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/fiber100"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                tools:text="value" />
+
+            <TextView
+                android:id="@+id/fiberServing"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                tools:text="value" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/nutritional_row_space"
+            android:paddingTop="@dimen/nutritional_row_space">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="@string/sodium"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/sodium100"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                tools:text="value" />
+
+            <TextView
+                android:id="@+id/sodiumServing"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                tools:text="value" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/nutritional_row_second_color"
+            android:paddingBottom="@dimen/nutritional_row_space"
+            android:paddingLeft="@dimen/nutritional_row_space"
+            android:paddingTop="@dimen/nutritional_row_space">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="@string/salt"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/salt100"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                tools:text="value" />
+
+            <TextView
+                android:id="@+id/saltServing"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                tools:text="value" />
+        </TableRow>
+
+    </TableLayout>
+
+
+</LinearLayout>

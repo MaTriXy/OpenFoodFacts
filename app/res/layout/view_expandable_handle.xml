@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.flavienlaurent.openfoodfacts.ui.UnderlineTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:textColor="@color/expandable_handle_textcolor"
+    android:textSize="@dimen/expandable_view_header_textsize"
+    android:textStyle="bold"
+    android:background="@drawable/selector_expandable_handle"
+    android:gravity="center_vertical"
+    android:text="handle"/>

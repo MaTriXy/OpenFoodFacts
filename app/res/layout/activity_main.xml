@@ -1,0 +1,165 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#C0C0C0"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_stub_image"
+            tools:scaleType="centerCrop"
+            tools:src="@drawable/ic_launcher" />
+
+        <ImageView
+            android:id="@+id/fullscreen"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/selector_image"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_av_full_screen" />
+
+        <TextView
+            android:id="@+id/barcode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="#AA2D3132"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textColor="@android:color/white"
+            android:visibility="invisible"
+            tools:text="123456789123"
+            tools:visibility="visible" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+    </FrameLayout>
+
+    <HorizontalScrollView
+        android:visibility="gone"
+        android:id="@+id/scrolltags"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        tools:background="@android:color/black">
+
+        <LinearLayout
+            android:id="@+id/tags"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/result"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/addedby"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="italic"
+                    tools:text="Added the 00/00/2013 by OpenFoodFacts" />
+
+                <TextView
+                    android:id="@+id/lastModifedby"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:textStyle="italic"
+                    tools:text="Last modified the 00/00/2013 by toto" />
+
+                <com.flavienlaurent.openfoodfacts.ui.ExpandableView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:handleTitle="@string/product_characteristics">
+
+                    <com.flavienlaurent.openfoodfacts.ui.product.ProductCharacteristicsView
+                        android:id="@+id/characteristics"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </com.flavienlaurent.openfoodfacts.ui.ExpandableView>
+
+                <com.flavienlaurent.openfoodfacts.ui.ExpandableView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:handleTitle="@string/product_ingredients">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="toto" />
+
+                </com.flavienlaurent.openfoodfacts.ui.ExpandableView>
+
+                <com.flavienlaurent.openfoodfacts.ui.ExpandableView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:handleTitle="@string/product_nutritional_status">
+
+                    <com.flavienlaurent.openfoodfacts.ui.product.ProductNutritionalStatusView
+                        android:id="@+id/nutritional_status"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </com.flavienlaurent.openfoodfacts.ui.ExpandableView>
+
+                <Button
+                    android:id="@+id/browse_product"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/browseProduct" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/intro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="25dp"
+            android:drawableTop="@drawable/ic_off_barcode"
+            android:gravity="center"
+            android:text="@string/main_intro"
+            android:textSize="22sp"
+            android:textStyle="italic" />
+
+    </FrameLayout>
+
+</LinearLayout>

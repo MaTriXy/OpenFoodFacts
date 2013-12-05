@@ -1,0 +1,7 @@
+<resources>
+
+    <dimen name="expandable_view_header_textsize">14sp</dimen>
+    <dimen name="expandable_view_header_height">36dp</dimen>
+    <dimen name="nutritional_row_space">5dp</dimen>
+
+</resources>
